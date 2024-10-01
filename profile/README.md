@@ -1,12 +1,12 @@
-## Hi there 👋
+# ReelRecs Organization
 
-<!--
+Welcome to the ReelRecs, a comprehensive movie recommendation system designed to provide personalized and popularity-based movie suggestions. This project is my solo endeavor, built using advanced data analytics and machine learning techniques to enhance movie discovery for users.
 
-**Here are some ideas to get you started:**
+## Repositories
+- **ReelRecs-core**: Contains all backend logic, handling functionalities such as user authentication and data management.
+- **ReelRecs-webapp**: The front-end application that users interact with, built to provide a smooth and responsive experience.
+- **ReelRecs-data-pipeline**: Manages automated ETL processes for integrating external data into the system.
+- **ReelRecs-dashboards**: Focuses on the visualization of user data and system performance through Google Data Studio.
+- **ReelRecs-legacy**: This repository hosts the original Jupyter Notebook version of the project, serving as the foundational legacy code from which the revamped ReelRecs project was derived.
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+For more details on each component, please visit the respective repositories linked above.
