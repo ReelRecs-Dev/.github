@@ -16,11 +16,19 @@ The diagram below provides an overview of the ReelRecs architecture, showing the
 ![ReelRecs UML Diagram](reelrecs-overview-uml.png)
 
 ### **Explanation of Components:**
-- **External API**: Sources data for the system (e.g., TMDb, IMDb).
-- **ReelRecs-core**: Handles backend logic, including API requests, user authentication, and business logic for recommendations.
-- **ReelRecs-data-pipeline**: Automates the ETL process, fetching raw data from external APIs, transforming it, and loading it into the database.
-- **ReelRecs-webapp**: Provides the user interface for interacting with the system.
-- **ReelRecs-dashboards**: Visualizes system performance, metrics, and user data analytics.
+- **External API**: External data sources (e.g., TMDb, IMDb) providing raw movie data.
+- **Extract**: Fetches raw data from the external APIs.
+- **Transform**: Cleans and processes raw data into a usable format.
+- **Load**: Loads the transformed data into the core database.
+- **Data Warehouse**: Optional storage for raw or intermediate data.
+- **Google Cloud Dataflow**: Orchestrates the ETL process, managing extraction, transformation, and loading.
+- **Controller**: Handles incoming API requests from the web app and routes them to services.
+- **Service**: Contains business logic for user interactions and recommendations.
+- **Model**: Represents the database structure and interacts with the database.
+- **Database**: Stores processed data, including movies, users, and ratings.
+- **Auth**: Manages user authentication and session security.
+- **Webapp**: The frontend interface users interact with to request recommendations and view data.
+- **Dashboard**: Visualizes system performance, usage metrics, and ETL statistics.
 
 ---
 
